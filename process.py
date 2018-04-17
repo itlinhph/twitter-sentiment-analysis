@@ -12,11 +12,10 @@ def remove_special_text(tweet):
 def load_emoji(filename):
     
     dict_emoji = {}
-    with open(filename) as emoji_file:
-        for line in emoji_file:
-            line = line[:-1]
-            emoji_sysbol, text = line.partition("\t")[::2]
-            dict_emoji[emoji_sysbol.strip()] = text
+    emoji_file = open(filename,'r').read().split('\n')
+    for line in emoji_file:
+        emoji_sysbol, text = line.partition("\t")[::2]
+        dict_emoji[emoji_sysbol.strip()] = text
     return dict_emoji
 
 def replace_emoji(tokens, dict_emoji):
@@ -32,11 +31,10 @@ def load_dictionary(filename):
 
 def load_boost_word(filename):
     boost_word = {}
-    with open(filename) as boost_file :
-        for line in boost_file:
-            line = line[:-1]
-            word, score = line.partition("\t")[::2]
-            boost_word[word.strip()] = int(score)
+    boost_file = open(filename, 'r').read().split('\n')
+    for line in boost_file:
+        word, score = line.partition("\t")[::2]
+        boost_word[word.strip()] = int(score)
     return boost_word
 
 
@@ -65,20 +63,21 @@ def evalue_score(tokens):
 def pre_process(tweet):
     
     tweet_demoji = emoji.demojize(tweet)            # Convert emojition to text
-    dict_emoji = load_emoji('dictionary/emoji.txt')            # Load file emoji
+    dict_emoji = load_emoji('dictionary/emoji.txt') # Load file emoji
     tokens =replace_emoji(tweet_demoji, dict_emoji) # Replace emoji to text
     
     tokens = remove_special_text(tokens)            # Remove special text
+    tokens = tokens.lower()                         # To lowercase
     tokens = nltk.word_tokenize(tokens)             # Tokenize tweet
     
     return tokens
 
-def process_dataset(input_file):
+def process_dataset(input_file, output_file):
     
     with open(input_file, "r") as dataset :
         data = yaml.load(dataset)
         print(len(data))
-        id =0
+        id = 1
         str_file = "ID\tPositive_score\tNegative_score\tContent\n"
 
         for tweet in data:
@@ -89,13 +88,10 @@ def process_dataset(input_file):
             str_file += str(id) + "\t"+ str(pos_score) +"\t" + str(neg_score) + "\t" + tweet + "\n"
             id+=1
 
-    text_file = open("output.txt", "w")
+    text_file = open(output_file, "w")
     text_file.write(str_file)
     text_file.close()
 
-
-# tokens = pre_process(tweet)
-# print(tokens)
 
 #Load file:
 positve_dict = load_dictionary('dictionary/positive-words.txt')
@@ -103,4 +99,5 @@ negative_dict = load_dictionary('dictionary/negative-words.txt')
 boost_word = load_boost_word('dictionary/boost-word.txt')
 
 
-process_dataset('syria2.yaml')
+# print(boost_word)
+process_dataset('syria2.yaml', 'output.txt')

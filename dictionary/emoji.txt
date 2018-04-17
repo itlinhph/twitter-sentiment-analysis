@@ -1,2 +1,31 @@
-face_with_tears_of_joy	hugely good
-winking_face	hugely good
+grinning_face_with_smiling_eyes	good
+face_with_tears_of_joy_hugely good
+smiling_face_with_open_mouth	very good
+smiling_face_with_open_mouth_and_smiling_eyes	hugely good
+smiling_face_with_open_mouth_and_cold_sweat	good
+smiling_face_with_open_mouth_and_tightly_closed_eyes	very good
+winking_face	good
+smiling_face_with_smiling_eyes	good
+face_savouring_delicious_food	very good
+relieved_face	good
+smiling_face_with_heart_shaped_eyes	hugely good
+face_throwing_a_kiss	very good
+face_with_stuck_out_tongue_and_winking_eye	good
+smirking_face	bad
+unamused_face	bad
+face_with_cold_sweat	bad
+pensive_face	bad
+confounded_face_hugely bad
+disappointed_face	very bad
+angry_face	very bad
+pouting_face	very bad
+crying_face	very bad
+persevering_face	bad
+face_with_look_of_triumph	very bad
+disappointed_but_relieved_face	hugely bad
+fearful_face	bad
+weary_face	very bad
+sleepy_face	bad
+tired_face	very bad
+loudly_crying_face	very bad
+face_with_open_mouth_and_cold_sweat	very bad

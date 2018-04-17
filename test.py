@@ -1,16 +1,16 @@
 import yaml
-# import emoji
+import emoji
 import re
 
-with open("syria2.yaml", "r") as input_file:
-    data = yaml.load(input_file)
-    print(len(data))
-    for item in data:
-        print (item)
-    print(data[1])
+# with open("syria2.yaml", "r") as input_file:
+#     data = yaml.load(input_file)
+#     print(len(data))
+#     for item in data:
+#         print (item)
+#     print(data[1])
 
 
-# print(emoji.demojize( '\u2019 :face_with_tears_of_joy:'))
+print(emoji.demojize( '\u2019 😭😭😭'))
 
 
 # myvars = {}
