@@ -71,34 +71,63 @@ import re
 # text_file.close()
 
 
-# print(emoji.demojize( '\U0001F643 \U0001F618 \U0001F60C \U0001F917'))
 
-def load_emoji(filename):
+# def load_emoji(filename):
     
-    dict_emoji = {}
-    emoji_file = open(filename,'r').read().split('\n')
-    for line in emoji_file:
-        emoji_sysbol, text = line.partition("\t")[::2]
-        dict_emoji[emoji_sysbol.strip()] = text
-    return dict_emoji
+#     dict_emoji = {}
+#     emoji_file = open(filename,'r').read().split('\n')
+#     for line in emoji_file:
+#         emoji_sysbol, text = line.partition("\t")[::2]
+#         dict_emoji[emoji_sysbol.strip()] = text
+#     return dict_emoji
 
 
 
-emoji2 = load_emoji('dictionary/emoji2.txt')
+# emoji2 = load_emoji('dictionary/emoji2.txt')
 
-# print(emoji2)
-emoji = load_emoji('dictionary/emoji.txt')
-# print(emoji)
+# # print(emoji2)
+# emoji = load_emoji('dictionary/emoji.txt')
+# # print(emoji)
 
-emoji2.update(emoji)
+# emoji2.update(emoji)
 # print(emoji2)
 
 # for key, value in emoji.items():
 #     print(key, '=', value)
 
-string = ""
-text_file = open("emojiall.txt", "w")
-for atr in sorted(emoji2):
-    string += atr +"\t" +emoji2[atr]+ "\n"
-text_file.write(string)
-text_file.close()
+# string = ""
+# text_file = open("emojiall.txt", "w")
+# for atr in sorted(emoji2):
+#     string += atr +"\t" +emoji2[atr]+ "\n"
+# text_file.write(string)
+# text_file.close()
+
+
+
+
+# tweet = "@MarvelStudios it’s not available in my country 😭 #Avengers #InfinityWar"
+# tokens = pre_process(tweet)
+# print(tokens)
+
+# query = "Select :Information:,AdditionalInformation,Price from Table"
+# lista = "Information"
+# var = "hide"
+
+# pat = re.compile(r'\b' + lista + r'\b')
+# query = pat.sub(var, query)
+# print(query)
+
+
+# tweet = "@MarvelStudios it’s not available in my country :loudly_crying_face: #Avengers #InfinityWar"
+# emoji = "loudly_crying_face"
+# dicte = "very good"
+
+# pat2 = re.compile(r'\b' + emoji + r'\b')
+# token2 = pat2.sub(dicte, tweet)
+
+# token3 = tweet.replace(":loudly_crying_face:", "ok")
+# print(token3)
+
+
+
+print(emoji.demojize( '\U0001F643 \U0001F618 \U0001F60C \U0001F917 \n 😍😂 😭 😎 \n ❤️'))

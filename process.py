@@ -5,7 +5,7 @@ import yaml
 
 
 def remove_special_text(tweet):
-    tokens = re.sub(r'(http\S+)|(@\S+)|RT|\#|\.|:', ' ', tweet)
+    tokens = re.sub(r'(http\S+)|(@\S+)|RT|\#|\.|\:|,', ' ', tweet)
     
     return tokens
 
@@ -21,7 +21,9 @@ def load_emoji(filename):
 def replace_emoji(tokens, dict_emoji):
 
     for emoji in dict_emoji:
-        tokens = tokens.replace(emoji, dict_emoji[emoji])
+        string = ":" + emoji + ":"
+        repl = " " + dict_emoji[emoji] + " "
+        tokens = tokens.replace(string, repl )
 
     return tokens
 
@@ -34,6 +36,7 @@ def load_boost_word(filename):
     boost_file = open(filename, 'r').read().split('\n')
     for line in boost_file:
         word, score = line.partition("\t")[::2]
+        # print(word, score)
         boost_word[word.strip()] = int(score)
     return boost_word
 
@@ -62,11 +65,10 @@ def evalue_score(tokens):
 
 def pre_process(tweet):
     
-    tweet_demoji = emoji.demojize(tweet)            # Convert emojition to text
+    tokens = remove_special_text(tweet)            # Remove special text
+    tweet_demoji = emoji.demojize(tokens)            # Convert emojition to text
     dict_emoji = load_emoji('dictionary/emoji.txt') # Load file emoji
     tokens =replace_emoji(tweet_demoji, dict_emoji) # Replace emoji to text
-    
-    tokens = remove_special_text(tokens)            # Remove special text
     tokens = tokens.lower()                         # To lowercase
     tokens = nltk.word_tokenize(tokens)             # Tokenize tweet
     
@@ -96,9 +98,10 @@ def process_dataset(input_file, output_file):
 #Load file:
 positve_dict = load_dictionary('dictionary/positive-words.txt')
 negative_dict = load_dictionary('dictionary/negative-words.txt')
-boost_word = load_boost_word('dictionary/boost-word.txt')
+boost_word = load_boost_word('dictionary/boost-words.txt')
 
+process_dataset('input/infinity_war3.yaml', 'output/infinity_war3.txt')
 
-# print(boost_word)
-process_dataset('input/syria3.yaml', 'output/syria3.txt')
-process_dataset('input/infinity_war.yaml', 'output/infinity_war.txt')
+# tweet = "RT @cyanwhisky: #infinitywar one iron man to go, please😎 https://t.co/IsfxUx10cF"
+# tokens = pre_process(tweet)
+# print(tokens)

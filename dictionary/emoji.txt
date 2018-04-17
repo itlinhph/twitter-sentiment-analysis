@@ -27,7 +27,6 @@ face_with_rolling_eyes	neutral
 face_with_steam_from_nose	very bad
 face_with_stuck_out_tongue_and_winking_eye	good
 face_with_tears_of_joy	hugely good
-face_with_tears_of_joy_hugely good	
 face_with_thermometer	very bad
 face_with_tongue	good
 face_without_mouth	neutral
@@ -60,7 +59,7 @@ slightly_frowning_face	seem bad
 slightly_smiling_face	good
 smiling_face	good
 smiling_face_with_halo	seem good
-smiling_face_with_heart-eyes	good
+smiling_face_with_heart-eyes	seem good
 smiling_face_with_heart_shaped_eyes	hugely good
 smiling_face_with_open_mouth	very good
 smiling_face_with_open_mouth_and_cold_sweat	good
@@ -80,3 +79,4 @@ winking_face	good
 winking_face_with_tongue	seem good
 worried_face	very bad
 zipper-mouth_face	bad
+red_heart	very good
