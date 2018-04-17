@@ -10,7 +10,6 @@ import re
 #     print(data[1])
 
 
-print(emoji.demojize( '\u2019 😭😭😭'))
 
 
 # myvars = {}
@@ -48,3 +47,58 @@ print(emoji.demojize( '\u2019 😭😭😭'))
 
 # boost = load_boost_word('boost-word.txt')
 # print(boost)
+
+
+# def process_emoji(filein):
+#     emoji_list = []
+#     emoji_file = open(filein, 'r').read().split('\n')
+
+#     for line in emoji_file:
+#         line = line[2:]
+#         line = line.lower()
+#         # line = line.replace(' ', '_')
+#         emoji_list.append(line)
+#     return emoji_list
+
+# emoji_list = process_emoji("emoji-explain.txt")
+# # print(emoji_list)
+
+# string = ""
+# text_file = open("emoji2.txt", "w")
+# for line in emoji_list:
+#     string += line + "\n"
+# text_file.write(string)
+# text_file.close()
+
+
+# print(emoji.demojize( '\U0001F643 \U0001F618 \U0001F60C \U0001F917'))
+
+def load_emoji(filename):
+    
+    dict_emoji = {}
+    emoji_file = open(filename,'r').read().split('\n')
+    for line in emoji_file:
+        emoji_sysbol, text = line.partition("\t")[::2]
+        dict_emoji[emoji_sysbol.strip()] = text
+    return dict_emoji
+
+
+
+emoji2 = load_emoji('dictionary/emoji2.txt')
+
+# print(emoji2)
+emoji = load_emoji('dictionary/emoji.txt')
+# print(emoji)
+
+emoji2.update(emoji)
+# print(emoji2)
+
+# for key, value in emoji.items():
+#     print(key, '=', value)
+
+string = ""
+text_file = open("emojiall.txt", "w")
+for atr in sorted(emoji2):
+    string += atr +"\t" +emoji2[atr]+ "\n"
+text_file.write(string)
+text_file.close()

@@ -100,4 +100,5 @@ boost_word = load_boost_word('dictionary/boost-word.txt')
 
 
 # print(boost_word)
-process_dataset('syria2.yaml', 'output.txt')
+process_dataset('input/syria3.yaml', 'output/syria3.txt')
+process_dataset('input/infinity_war.yaml', 'output/infinity_war.txt')

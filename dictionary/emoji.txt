@@ -1,31 +1,82 @@
-grinning_face_with_smiling_eyes	good
-face_with_tears_of_joy_hugely good
-smiling_face_with_open_mouth	very good
-smiling_face_with_open_mouth_and_smiling_eyes	hugely good
-smiling_face_with_open_mouth_and_cold_sweat	good
-smiling_face_with_open_mouth_and_tightly_closed_eyes	very good
-winking_face	good
-smiling_face_with_smiling_eyes	good
-face_savouring_delicious_food	very good
-relieved_face	good
-smiling_face_with_heart_shaped_eyes	hugely good
-face_throwing_a_kiss	very good
-face_with_stuck_out_tongue_and_winking_eye	good
-smirking_face	bad
-unamused_face	bad
-face_with_cold_sweat	bad
-pensive_face	bad
-confounded_face_hugely bad
-disappointed_face	very bad
 angry_face	very bad
-pouting_face	very bad
+anguished_face	bad
+anxious_face_with_sweat	neutral
+astonished_face	bad
+beaming_face_with_smiling_eyes	very good
+confounded_face	neutral
+confounded_face_hugely bad	
+confused_face	bad
 crying_face	very bad
-persevering_face	bad
-face_with_look_of_triumph	very bad
 disappointed_but_relieved_face	hugely bad
-fearful_face	bad
-weary_face	very bad
-sleepy_face	bad
-tired_face	very bad
-loudly_crying_face	very bad
+disappointed_face	very bad
+dizzy_face	neutral
+downcast_face_with_sweat	seem bad
+expressionless_face	seem bad
+face_blowing_a_kiss	very good
+face_savoring_food	very good
+face_savouring_delicious_food	very good
+face_screaming_in_fear	neutral
+face_throwing_a_kiss	very good
+face_with_cold_sweat	bad
+face_with_head-bandage	bad
+face_with_look_of_triumph	very bad
+face_with_medical_mask	good
+face_with_open_mouth	neutral
 face_with_open_mouth_and_cold_sweat	very bad
+face_with_rolling_eyes	neutral
+face_with_steam_from_nose	very bad
+face_with_stuck_out_tongue_and_winking_eye	good
+face_with_tears_of_joy	hugely good
+face_with_tears_of_joy_hugely good	
+face_with_thermometer	very bad
+face_with_tongue	good
+face_without_mouth	neutral
+fearful_face	bad
+flushed_face	neutral
+frowning_face	seem bad
+frowning_face_with_open_mouth	neutral
+grimacing_face	seem bad
+grinning_face	seem good
+grinning_face_with_big_eyes	hugely good
+grinning_face_with_smiling_eyes	good
+grinning_face_with_sweat	very good
+grinning_squinting_face	hugely good
+hugging_face	good
+hushed_face	neutral
+kissing_face	hugely good
+kissing_face_with_closed_eyes	very good
+kissing_face_with_smiling_eyes	hugely good
+loudly_crying_face	very bad
+money-mouth_face	good
+neutral_face	just neutral
+pensive_face	bad
+persevering_face	bad
+pouting_face	very bad
+relieved_face	good
+sad_but_relieved_face	very bad
+sleeping_face	neutral
+sleepy_face	bad
+slightly_frowning_face	seem bad
+slightly_smiling_face	good
+smiling_face	good
+smiling_face_with_halo	seem good
+smiling_face_with_heart-eyes	good
+smiling_face_with_heart_shaped_eyes	hugely good
+smiling_face_with_open_mouth	very good
+smiling_face_with_open_mouth_and_cold_sweat	good
+smiling_face_with_open_mouth_and_smiling_eyes	hugely good
+smiling_face_with_open_mouth_and_tightly_closed_eyes	very good
+smiling_face_with_smiling_eyes	good
+smiling_face_with_sunglasses	good
+smirking_face	bad
+squinting_face_with_tongue	seem good
+thinking_face	just good
+tired_face	very bad
+tks	thanks
+unamused_face	bad
+upside-down_face	neutral
+weary_face	very bad
+winking_face	good
+winking_face_with_tongue	seem good
+worried_face	very bad
+zipper-mouth_face	bad

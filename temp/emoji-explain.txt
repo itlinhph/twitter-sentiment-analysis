@@ -1,0 +1,67 @@
+😀_grinning_face	seem good
+😁_beaming_face_with_smiling_eyes	very good
+😂_face_with_tears_of_joy	hugely good
+😃_grinning_face_with_big_eyes	hugely good
+😄_grinning_face_with_smiling_eyes	very good
+😅_grinning_face_with_sweat	very good
+😆_grinning_squinting_face	hugely good
+😉_winking_face	very good
+😊_smiling_face_with_smiling_eyes	good
+😋_face_savoring_food	very good
+😎_smiling_face_with_sunglasses	good
+😍_smiling_face_with_heart-eyes	good
+😘_face_blowing_a_kiss	very good
+😗_kissing_face	hugely good
+😙_kissing_face_with_smiling_eyes	hugely good
+😚_kissing_face_with_closed_eyes	very good
+☺_smiling_face	good
+🙂_slightly_smiling_face	good
+🤗_hugging_face	good
+🤔_thinking_face	just good
+😐_neutral_face	just neutral
+😑_expressionless_face	seem bad
+😶_face_without_mouth	neutral
+🙄_face_with_rolling_eyes	neutral
+😏_smirking_face	neutral
+😣_persevering_face	very bad
+😥_sad_but_relieved_face	very bad
+😮_face_with_open_mouth	neutral
+🤐_zipper-mouth_face	bad
+😯_hushed_face	neutral
+😪_sleepy_face	neutral
+😫_tired_face	bad
+😴_sleeping_face	neutral
+😌_relieved_face	neutral
+😛_face_with_tongue	good
+😜_winking_face_with_tongue	seem good
+😝_squinting_face_with_tongue	seem good
+😒_unamused_face	seem bad
+😓_downcast_face_with_sweat	seem bad
+😔_pensive_face	bad
+😕_confused_face	bad
+🙃_upside-down_face	neutral
+🤑_money-mouth_face	good
+😲_astonished_face	bad
+☹_frowning_face	seem bad
+🙁_slightly_frowning_face	seem bad
+😖_confounded_face	neutral
+😞_disappointed_face	very bad
+😟_worried_face	very bad
+😤_face_with_steam_from_nose	very bad
+😢_crying_face	bad
+😭_loudly_crying_face	very bad
+😦_frowning_face_with_open_mouth	neutral
+😧_anguished_face	bad
+😨_fearful_face	seem bad
+😩_weary_face	seem bad
+😬_grimacing_face	seem bad
+😰_anxious_face_with_sweat	neutral
+😱_face_screaming_in_fear	neutral
+😳_flushed_face	neutral
+😵_dizzy_face	neutral
+😡_pouting_face	bad
+😠_angry_face	very bad
+😷_face_with_medical_mask	good
+🤒_face_with_thermometer	very bad
+🤕_face_with_head-bandage	bad
+😇_smiling_face_with_halo	seem good

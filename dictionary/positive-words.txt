@@ -1790,6 +1790,7 @@ tenderly
 terrific
 terrifically
 thank
+thanks
 thankful
 thinner
 thoughtful
@@ -2004,3 +2005,4 @@ zeal
 zenith
 zest
 zippy
+lol

@@ -1,0 +1,75 @@
+grinning_face	seem good
+beaming_face_with_smiling_eyes	very good
+face_with_tears_of_joy	hugely good
+grinning_face_with_big_eyes	hugely good
+grinning_face_with_smiling_eyes	very good
+grinning_face_with_sweat	very good
+grinning_squinting_face	hugely good
+winking_face	very good
+smiling_face_with_smiling_eyes	good
+face_savoring_food	very good
+smiling_face_with_sunglasses	good
+smiling_face_with_heart-eyes	good
+face_blowing_a_kiss	very good
+kissing_face	hugely good
+kissing_face_with_smiling_eyes	hugely good
+kissing_face_with_closed_eyes	very good
+smiling_face	good
+slightly_smiling_face	good
+hugging_face	good
+thinking_face	just good
+neutral_face	just neutral
+expressionless_face	seem bad
+face_without_mouth	neutral
+face_with_rolling_eyes	neutral
+smirking_face	neutral
+persevering_face	very bad
+sad_but_relieved_face	very bad
+face_with_open_mouth	neutral
+zipper-mouth_face	bad
+hushed_face	neutral
+sleepy_face	neutral
+tired_face	bad
+sleeping_face	neutral
+relieved_face	neutral
+face_with_tongue	good
+winking_face_with_tongue	seem good
+squinting_face_with_tongue	seem good
+unamused_face	seem bad
+downcast_face_with_sweat	seem bad
+pensive_face	bad
+confused_face	bad
+upside-down_face	neutral
+money-mouth_face	good
+astonished_face	bad
+frowning_face	seem bad
+slightly_frowning_face	seem bad
+confounded_face	neutral
+disappointed_face	very bad
+worried_face	very bad
+face_with_steam_from_nose	very bad
+crying_face	bad
+loudly_crying_face	very bad
+frowning_face_with_open_mouth	neutral
+anguished_face	bad
+fearful_face	seem bad
+weary_face	seem bad
+grimacing_face	seem bad
+anxious_face_with_sweat	neutral
+face_screaming_in_fear	neutral
+flushed_face	neutral
+dizzy_face	neutral
+pouting_face	bad
+angry_face	very bad
+face_with_medical_mask	good
+face_with_thermometer	very bad
+face_with_head-bandage	bad
+smiling_face_with_halo	seem good
+face_with_tears_of_joy_hugely	seem good
+smiling_face_with_open_mouth	very good
+smiling_face_with_open_mouth_and_smiling_eyes	hugely good
+smiling_face_with_open_mouth_and_cold_sweat	good
+smiling_face_with_open_mouth_and_tightly_closed_eyes	very good
+face_savouring_delicious_food	very good
+smiling_face_with_heart_shaped_eyes	hugely good
+face_throwing_a_kiss	very good
