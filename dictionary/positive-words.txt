@@ -703,6 +703,7 @@ favor
 favorable
 favored
 favorite
+favourite
 favorited
 favour
 fearless

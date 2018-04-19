@@ -7,7 +7,7 @@ import twitter
 def main():
     api = TwitterAPI.TwitterAPI(** settings.get_app_settings())
 
-    twitter.fetch(api, 'search/tweets', 'me_too', {'q': '#MeToo'})
+    twitter.fetch(api, 'search/tweets', 'infinityWar', {'q': '#metoo'})
 
 
 if __name__ == '__main__':

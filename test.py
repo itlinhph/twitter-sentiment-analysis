@@ -129,5 +129,4 @@ import re
 # print(token3)
 
 
-
-print(emoji.demojize( '\U0001F643 \U0001F618 \U0001F60C \U0001F917 \n 😍😂 😭 😎 \n ❤️'))
+print(emoji.demojize('\U0001F643 \U0001F618 \U0001F60C \U0001F917 \n 😍😂 😭 😎 \n ❤️\n 💖'))

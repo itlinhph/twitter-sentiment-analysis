@@ -80,3 +80,5 @@ winking_face_with_tongue	seem good
 worried_face	very bad
 zipper-mouth_face	bad
 red_heart	very good
+broken_heart	bad
+sparkling_heart	good

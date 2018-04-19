@@ -14,6 +14,8 @@ def load_emoji(filename):
     dict_emoji = {}
     emoji_file = open(filename,'r').read().split('\n')
     for line in emoji_file:
+        if line == "":
+            continue
         emoji_sysbol, text = line.partition("\t")[::2]
         dict_emoji[emoji_sysbol.strip()] = text
     return dict_emoji
@@ -35,30 +37,42 @@ def load_boost_word(filename):
     boost_word = {}
     boost_file = open(filename, 'r').read().split('\n')
     for line in boost_file:
+        if line == "":
+            continue
         word, score = line.partition("\t")[::2]
         # print(word, score)
         boost_word[word.strip()] = int(score)
     return boost_word
 
-
 def boost_word_score(i, tokens):
-    word = ""
+    word1 = ""
+    word2 = ""
     if i>0:
-        word = tokens[i-1]
-
-    if word in boost_word:
-        return boost_word[word]
-    else:
-        return 0
+        word1 = tokens[i-1]
+        if i>1:
+            word2 = tokens[i-2]
+    listword = []
+    listword.append(word1)
+    listword.append(word2)
+    
+    list_score = []
+    for word in listword:
+        if word in boost_word:
+            list_score.append(boost_word[word])
+    score = sum(list_score)
+    if score == 0:
+        score = 1 
+    
+    return score
 
 def evalue_score(tokens):
     pos_score = 0
     neg_score = 0
     for i,word in enumerate(tokens):
         if word in positve_dict:
-            pos_score += (1 + boost_word_score(i, tokens) )
+            pos_score += (1 * boost_word_score(i, tokens) )
         elif word in negative_dict:
-            neg_score += (1 + boost_word_score(i, tokens))
+            neg_score += (1 * boost_word_score(i, tokens))
     
     # print("Pos: ", pos_score, "Neg: ", neg_score)
     return pos_score , neg_score
@@ -84,6 +98,7 @@ def process_dataset(input_file, output_file):
 
         for tweet in data:
             tokens = pre_process(tweet)
+            tweet = tweet.replace("\n", " ")
             #Evalue score:
             pos_score, neg_score = evalue_score(tokens)
             
@@ -100,8 +115,14 @@ positve_dict = load_dictionary('dictionary/positive-words.txt')
 negative_dict = load_dictionary('dictionary/negative-words.txt')
 boost_word = load_boost_word('dictionary/boost-words.txt')
 
-process_dataset('input/infinity_war3.yaml', 'output/infinity_war3.txt')
+process_dataset('input/inputall.yaml', 'output/outputall2.txt')
 
-# tweet = "RT @cyanwhisky: #infinitywar one iron man to go, please😎 https://t.co/IsfxUx10cF"
+
+# tweet = "RT @cyanwhisky: #infinitywar very good one iron man to go, please😎 https://t.co/IsfxUx10cF"
+# tweet = "Just heard a dude compare fucking crazy the #MeToo Movement to the Salem Witch Trials and I just....😪😐😑"
+# tweet = "Shhh don't tell tony he isn't my favourite #avenger 😂😂"
+# tweet = "#SweetDreams😴💤#TwitterWorld 🌍  #HappyWednesday dear #friends💞  👍Love💙Live🌸&amp; Be Happy😎  ☮️CARPE DIEM💖  #TT4F #MUNEE… https://t.co/YNLcTXf0UZ"
 # tokens = pre_process(tweet)
+# pos, neg = evalue_score(tokens)
 # print(tokens)
+# print("pos:", pos, "neg: ", neg)
